@@ -27,11 +27,13 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
 ?>
 
 //Establishes the connection
+<?php
 $conn = sqlsrv_connect($serverName, $connectionOptions);
 if (!$conn)
 {
   die("Error connection: ".sqlsrv_errors());
 }
+>?
 
 </table>
 </center>
